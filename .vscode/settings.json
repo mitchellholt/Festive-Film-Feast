@@ -1,0 +1,12 @@
+{
+    "emeraldwalk.runonsave": {
+
+        "commands": [
+            {
+                "match": "\\.elm$",
+                "cmd": "cd ${workspaceRoot} && (elm-format --yes src/) && (elm make src/Main.elm --output=out/elm.js) && (tailwindcss -o out/tailwind.css)",
+                "runIn": "terminal"
+            }
+        ]
+    }
+}
